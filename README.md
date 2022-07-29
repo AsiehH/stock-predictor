@@ -1,6 +1,6 @@
 # stock-predictor
 
-The instruction for creating this API is found on my [FourthBrain repo](https://github.com/FourthBrain/MLE-7/tree/main/assignments/week-11-intro-mlops/stock-predictor)
+The instruction for creating this API is found on my [FourthBrain repo](https://github.com/AsiehH/MLE-7/tree/main/assignments/week-11-intro-mlops/stock-predictor)
 
 To get predictions from the API, run the following command from a terminal window on your local machine. The IP@ is the public IPV4 of your EC2 instance. 
 
