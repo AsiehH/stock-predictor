@@ -4,6 +4,11 @@ from model import predict, convert
 
 app = FastAPI()
 
+@app.get("/ping")
+def pong():
+    return {"ping": "pong!"}
+
+    
 # pydantic models
 class StockIn(BaseModel):
     ticker: str
