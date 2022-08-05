@@ -25,8 +25,8 @@ def train(ticker="MSFT"):
     model = Prophet()
     model.fit(df_forecast)
 
-    joblib.dump(model, Path(BASE_DIR).joinpath(f"../models/{ticker}.joblib"))
-
+#    joblib.dump(model, Path(BASE_DIR).joinpath(f"../models/{ticker}.joblib"))
+    joblib.dump(model, Path(BASE_DIR).joinpath(f"{ticker}.joblib"))
 
 def predict(ticker="MSFT", days=7):
     model_file = Path(BASE_DIR).joinpath(f"{ticker}.joblib")
