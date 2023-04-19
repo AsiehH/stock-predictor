@@ -215,13 +215,15 @@ or more readable as follows:
     }
     ```
     
-    These are the predicted prices for the next 7 days for the Microsoft stock (ticker: MSFT).
+    
+These are the predicted prices for the next 7 days for the Microsoft stock (ticker: MSFT).
 
-    Note that running the above command saves `MSFT.joblib` model along with two images
-    <p align="center">
-    <img src="figures/MSFT_plot.png" alt="drawing" width="400"/>
-    <img src="figures/MSFT_plot_components.png" alt="drawing" width="400"/>
-    </p>
+Note that running the above command saves `MSFT.joblib` model along with two images
+
+<p align="center">
+<img src="figures/MSFT_plot.png" alt="drawing" width="400"/>
+<img src="figures/MSFT_plot_components.png" alt="drawing" width="400"/>
+</p>
 
 4. You can make more models, e.g.,
     ```
@@ -332,37 +334,36 @@ Let's just output the forecast in JSON. Comment out the following lines in `pred
     pip list --format=freeze > requirements.txt
     ```
 8. Commit and push your work. 
-
-    <details> 
-    <summary> Click here to see a sample structure of the repository 
-    </summary>
-You can see the structure of your folder by running `tree -L 2` on the root folder of your project.
-
-    
-    ```
-├── LICENSE
-├── README.md
-├── __pycache__
-│   ├── main.cpython-39.pyc
-│   └── model.cpython-39.pyc
-├── figures
-│   ├── AAPL_plot.png
-│   ├── AAPL_plot_components.png
-│   ├── GOOG_plot.png
-│   ├── GOOG_plot_components.png
-│   ├── MSFT_plot.png
-│   └── MSFT_plot_components.png
-├── models
-│   ├── AAPL.joblib
-│   ├── GOOG.joblib
-│   └── MSFT.joblib
-├── requirements.txt
-└── src
-    ├── __pycache__
-    ├── main.py
-    └── model.py
-     ```
-    </details>
+	
+	<details> 
+	<summary> Click here to see a sample structure of the repository 
+	
+	You can see the structure of your folder by running `tree -L 2` on the root folder of your project.
+		
+	```
+	├── LICENSE
+	├── README.md
+	├── __pycache__
+	│   ├── main.cpython-39.pyc
+	│   └── model.cpython-39.pyc
+	├── figures
+	│   ├── AAPL_plot.png
+	│   ├── AAPL_plot_components.png
+	│   ├── GOOG_plot.png
+	│   ├── GOOG_plot_components.png
+	│   ├── MSFT_plot.png
+	│   └── MSFT_plot_components.png
+	├── models
+	│   ├── AAPL.joblib
+	│   ├── GOOG.joblib
+	│   └── MSFT.joblib
+	├── requirements.txt
+	└── src
+	├── __pycache__
+	├── main.py
+	└── model.py
+	```
+	</details>
 
 
 # 4. AWS Deployment
