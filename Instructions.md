@@ -336,7 +336,7 @@ Let's just output the forecast in JSON. Comment out the following lines in `pred
 8. Commit and push your work. 
 	
 	<details> 
-	<summary> Click here to see a sample structure of the repository 
+	<summary> Click here to see a sample structure of the repository </summary>
 	
 	You can see the structure of your folder by running `tree -L 2` on the root folder of your project.
 		
