@@ -12,13 +12,15 @@
 3. Activate the virtual environment to start the development process
 
  `conda activate stock-predictor`
+ 
     
-	1.1 Install the following dependencies:
+	1. Install the following dependencies:
 
 	    `pip install -U -q fastapi uvicorn` 
+	    
 
-	1.2 Clone the repo to your local machine 
-
+	2. Clone the repo to your local machine 
+	
     
    
 4. Create a file `main.py` for our app in the `src` folder. Inside the file, create a new instance of `FastAPI` and set up a quick test route
