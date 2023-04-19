@@ -11,15 +11,14 @@
     
 3. Activate the virtual environment to start the development process
 
- `conda activate stock-predictor`
- 
-    
-	1. Install the following dependencies:
+	 `conda activate stock-predictor`
+	 
+	 1. Install the following dependencies:
 
 	    `pip install -U -q fastapi uvicorn` 
 	    
 
-	2. Clone the repo to your local machine 
+	 2. Clone the repo to your local machine 
 	
     
    
@@ -182,13 +181,13 @@ if __name__ == "__main__":
 
 Here we defined three functions (this model was developed by [Andrew Clark](https://twitter.com/aclarkdata1)):
 
-    - `train` downloads historical stock data with [`yfinance`](https://github.com/ranaroussi/yfinance), creates a new Prophet model, fits the model to the stock data, and then serializes and saves the model as a [`Joblib file`](https://joblib.readthedocs.io/en/latest/generated/joblib.dump.html).
+- `train` downloads historical stock data with [`yfinance`](https://github.com/ranaroussi/yfinance), creates a new Prophet model, fits the model to the stock data, and then serializes and saves the model as a [`Joblib file`](https://joblib.readthedocs.io/en/latest/generated/joblib.dump.html).
 
-    - `predict` loads and deserializes the saved model, generates a new forecast, creates images of the forecast plot and forecast components, and returns the days included in the forecast as a list of dicts.
+- `predict` loads and deserializes the saved model, generates a new forecast, creates images of the forecast plot and forecast components, and returns the days included in the forecast as a list of dicts.
 
-    - `convert` takes the list of dicts from `predict` and outputs a dict of dates and forecasted values; e.g., `{"07/02/2020": 200}`).
+- `convert` takes the list of dicts from `predict` and outputs a dict of dates and forecasted values; e.g., `{"07/02/2020": 200}`).
 
-    -  The last block of code allows you to execute the model from the command line, with two arguments, a valid stock ticker and the number of days to predict. 
+-  The last block of code allows you to execute the model from the command line, with two arguments, a valid stock ticker and the number of days to predict. 
 
 3. To see the results, in a shell, run:
     
@@ -196,12 +195,12 @@ Here we defined three functions (this model was developed by [Andrew Clark](http
 
     Output shall looks similar to the following (the output was generated on Apr 18, 2023)
 
-    ```
-    [*********************100%***********************]  1 of 1 completed
+```
+[*********************100%***********************]  1 of 1 completed
 19:21:22 - cmdstanpy - INFO - Chain [1] start processing
 19:21:22 - cmdstanpy - INFO - Chain [1] done processing
 {'04/19/2023': 265.7623280153823, '04/20/2023': 265.8708547944026, '04/21/2023': 265.97938157342287, '04/22/2023': 266.08790835244315, '04/23/2023': 266.1964351314634, '04/24/2023': 266.3049619104837, '04/25/2023': 266.41348868950394}    
-	```
+```
 or more readable as follows:
 
     ```
@@ -338,6 +337,7 @@ Let's just output the forecast in JSON. Comment out the following lines in `pred
     <summary> Click here to see a sample structure of the repository 
     </summary>
 You can see the structure of your folder by running `tree -L 2` on the root folder of your project.
+
     
     ```
 ├── LICENSE
@@ -451,14 +451,14 @@ You can see the structure of your folder by running `tree -L 2` on the root fold
     INFO:     Application startup complete.
     ```
     
-11. Now find the Public IPv4 address for your instance, e.g., 35.90.247.255, and run the following in another shell on your local machine:
+11. Now find the Public IPv4 address for your instance, e.g., 52.32.56.182, and run the following in another shell on your local machine:
 
     ```
     curl \
     --header "Content-Type: application/json" \
     --request POST \
     --data '{"ticker":"MSFT", "days":7}' \
-    http://35.90.247.255:8000/predict
+    http://52.32.56.182:8000/predict
     ```
 
     You shall see the predictions 🎉🎉🎉
@@ -468,7 +468,7 @@ You can see the structure of your folder by running `tree -L 2` on the root fold
 
     You can attach the session by running `tmux attach -t stock_session`.
 
-13. You shall be able to access the API documentation and share it with others. Use the Public IP address for your EC2 instance, e.g., `http://35.90.247.255:8000/docs`. 
+13. You shall be able to access the API documentation and share it with others. Use the Public IP address for your EC2 instance, e.g., `http://52.32.56.182:8000/docs`. 
 
     <details>
     <summary> Screenshots of the docs.

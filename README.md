@@ -12,18 +12,18 @@ This repo includes the files and instructions to deploy a stock prediciton model
 - Build a basic time series model to predict stock prices
 - Deploy a FastAPI to AWS EC2
 
-    ```
+
 
 ## Result    
-In the end, after finding the Public IPv4 address for your instance, e.g., 35.90.247.255, you can run the following in a shell on your local machine. You can use a different `ticker` and `days`:
+In the end, after finding the Public IPv4 address for your instance, e.g., 52.32.56.182, you can run the following in a shell on your local machine. You can use a different `ticker` and `days`:
 
-    ```
-    curl \
-    --header "Content-Type: application/json" \
-    --request POST \
-    --data '{"ticker":"MSFT", "days":7}' \
-    http://35.90.247.255:8000/predict
-    ```
+```
+curl \
+--header "Content-Type: application/json" \
+--request POST \
+--data '{"ticker":"MSFT", "days":7}' \
+http://52.32.56.182:8000/predict
+```
 
 
 
