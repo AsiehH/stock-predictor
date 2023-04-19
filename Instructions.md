@@ -13,11 +13,11 @@
 
  `conda activate stock-predictor`
     
-	1. Install the following dependencies:
+	1.1 Install the following dependencies:
 
 	    `pip install -U -q fastapi uvicorn` 
 
-	2. Clone the repo to your local machine 
+	1.2 Clone the repo to your local machine 
 
     
    
