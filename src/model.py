@@ -10,7 +10,7 @@ from prophet import Prophet
 
 import argparse
 
-BASE_DIR = Path(__file__).resolve(strict=True).parent
+BASE_DIR = Path(__file__).resolve(strict=True).parents[1]
 MODEL_DIR = Path(BASE_DIR).joinpath("models")
 FIG_DIR = Path(BASE_DIR).joinpath("figures")
 TODAY = datetime.date.today()
