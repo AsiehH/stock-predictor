@@ -5,6 +5,8 @@ This repo includes the files and instructions to deploy a stock prediciton model
     
     data -> model -> API -> deployment
 
+Instructions can be found [here](Instructions.md).
+
 
 ## Objectives
 
