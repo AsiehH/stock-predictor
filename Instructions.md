@@ -499,7 +499,7 @@ In this section, we build a container image for our app, using Docker.
 
     ``` docker --version ```
 
-    If you see something like `Docker version 20.10.13, build a224086`, you have successfully installed Docker.
+    If you see something like `Docker version 20.10.24, build 297e128`, you have successfully installed Docker.
 
 3. Create a `.dockerignore` file in your project directory.
 
