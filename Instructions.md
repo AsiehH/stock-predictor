@@ -689,6 +689,7 @@ In this section, we build a container image for our app, using Docker.
     ```
 
     or getting predictions:
+    
     ```
     curl \
     --header "Content-Type: application/json" \
@@ -708,4 +709,6 @@ In this section, we build a container image for our app, using Docker.
     ```
     Stopped container mycontainer
     ```
+    
+7. Commit and push your changes to the `container` branch and merge the branch to the `main` branch.      
     
