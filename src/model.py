@@ -71,12 +71,12 @@ def predict(ticker: str="MSFT", days: int=7) -> Optional[List[Dict[str, float]]]
     df = pd.DataFrame({"ds": dates})
 
     forecast = model.predict(df)
-   
+    """
     model.plot(forecast).savefig(
         Path(FIG_DIR).joinpath(f"{ticker}_plot.png"))
     model.plot_components(forecast).savefig(
         Path(FIG_DIR).joinpath(f"{ticker}_plot_components.png"))
-    
+    """    
     return forecast.tail(days).to_dict("records")
 
 def convert(prediction_list: List[Dict[str, float]]) -> Dict[str, float]:
