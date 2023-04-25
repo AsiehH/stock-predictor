@@ -359,9 +359,9 @@ Let's just output the forecast in JSON. Comment out the following lines in `pred
 	│   └── MSFT.joblib
 	├── requirements.txt
 	└── src
-	├── __pycache__
-	├── main.py
-	└── model.py
+	    ├── __pycache__
+	    ├── main.py
+	    └── model.py
 	```
 	</details>
 
